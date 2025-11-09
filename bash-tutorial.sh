@@ -50,7 +50,7 @@ if [[ 10 -lt 15 ]]; then
 else 
     echo "10 is greater than 15"
 fi
-'
+
 
 NUM1=""
 NUM2=""
@@ -74,4 +74,23 @@ while true; do
         echo $NUM1 and $NUM2 are equal
     fi
 done
+
+# left off: 23:00
+wc -w <<< "Hi my name is Kristijan"
+[ hello = hello ]
+echo $?
+
+if [ ${1,,} ] = kali ]; then
+    echo "Oh, you're the boss here. Welcome!"
+elif [ ${1,,} = help ]; then
+    echo "Just enter your username, duh!"
+else 
+    echo "I don't know who you are. But youre not the boss of me!"
+fi
+
+'
+
+echo "Original: $1"
+echo "Lowercase: ${1,,}"
+
 
