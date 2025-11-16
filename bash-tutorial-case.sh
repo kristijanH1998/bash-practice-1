@@ -35,3 +35,5 @@ associative_arr_1=([key1]="value1" [key2]="value2" [key3]="value3")
 echo ${!associative_arr_1[@]}
 echo ${!associative_arr_1[*]}
 echo ${#associative_arr_1[@]}
+
+# left off: 34:48
