@@ -13,6 +13,8 @@ then
     cnt=$(grep -i -c $grepvar $fileName)
     printf "\n"
     echo "$grepvar occurs $cnt times in $fileName"
+    cntNot=$(grep -i -v $grepvar $fileName | wc -l)
+    echo "$grepvar does not occur on $cntNot lines in $fileName"
 else
     echo "$fileName does not exist"
 fi
