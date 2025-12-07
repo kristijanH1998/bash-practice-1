@@ -1,9 +1,10 @@
 #! /usr/bin/bash
 
 # echo $1
-
+set -x
 echo "Enter filename to substitute using sed"
 read fileName
+set +x
 
 if [[ -f $fileName ]]
 then
